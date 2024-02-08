@@ -9,7 +9,9 @@
     <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
       My
       <span class="poppins text-teal-600">Blog</span>
+      (In Progress)
     </h2>
+
     <p class="text-base sm:text-lg md:text-xl">
       Some random things I have done over the years, from <span
         class="text-teal-600">machine learning</span
