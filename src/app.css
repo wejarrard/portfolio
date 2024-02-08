@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.greenShadow {
+    box-shadow: 0px 14px 55px rgba(40, 217, 173, 0.485);
+}
+
+.specialSpin {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blur-load {
+    background-size: cover;
+    background-position: center;
+}
+
+.img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.prose a {
+    @apply text-teal-500;
+}
+
+.prose :is(h2) {
+    @apply text-5xl font-bold;
+}
+
+.prose h3 {
+    @apply text-4xl font-bold;
+}
+
+.prose h4 {
+    @apply text-3xl font-bold;
+}
+
+
+.prose :is(h2, h3, h4, h5, h6) {
+    @apply mt-8 mb-3;
+  }
+  
+.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
+    @apply mt-7;
+  }
+  
+.prose :is(ul, ol) {
+    @apply list-none pl-5;
+  }
+  
+.prose pre {
+    @apply mb-2 pl-2;
+  }
+  
