@@ -2,7 +2,7 @@ export const benefits = [
     {
         name: "An independent learner",
         description:
-            "I excel at self-directed learning, particularly in the realm of technology. My proactive approach led me to independently master front-end coding, enhancing my skill set beyond my primary expertise as a machine learning engineer. This self-taught journey in front-end development complements my in-depth knowledge and skills in machine learning, showcasing my ability to embrace and master new technologies from scratch in my spare time.",
+            "I excel at self-directed learning, particularly in the realm of technology. My proactive approach led me to independently learn front-end coding, enhancing my skill set beyond my primary expertise as a machine learning engineer. This self-taught journey in front-end development complements my in-depth knowledge and skills in machine learning, showcasing my ability to embrace and master new technologies from scratch in my spare time.",
     },
     {
         name: "a creative problem solver",

@@ -50,7 +50,7 @@ h3,
     @apply text-teal-500;
 }
 
-.prose :is(h2) {
+.prose h2 {
     @apply text-5xl font-bold;
 }
 
