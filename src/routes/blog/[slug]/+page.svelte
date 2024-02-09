@@ -18,9 +18,7 @@
     </p>
   </hgroup>
 
-  <div
-    class="flex justify-center gap-4 mt-4 border-b border-teal-400 mx-auto p-4 rounded-lg"
-  >
+  <div class="flex justify-center gap-4 mt-4 mx-auto p-4 rounded-lg">
     {#each data.meta.categories as category}
       <span class="py-2 px-3 rounded-full bg-gray-700 text-white"
         >&num;{category}</span
@@ -28,7 +26,7 @@
     {/each}
   </div>
 
-  <div class="prose">
+  <div class="prose bg-slate-950 border-t border-teal-400">
     <svelte:component this={data.content} />
   </div>
 </article>
