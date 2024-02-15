@@ -4,9 +4,9 @@
 
 <section id="introPage">
   <div
-    class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-teal-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-teal-700 py-4"
+    class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-teal-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-teal-700 py-16"
   >
-    <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
+    <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl py-6">
       My
       <span class="poppins text-teal-600">Blog</span>
       (In Progress)
