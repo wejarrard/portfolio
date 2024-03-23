@@ -1,5 +1,4 @@
 <script>
-  import { benefits } from "$lib/benefits.js";
   import { steps } from "$lib/steps.js";
   import Step from "./Step.svelte";
 </script>
@@ -63,7 +62,7 @@
       {/each}
     </div>
   </section>
-  <section
+  <!-- <section
     id="about"
     class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
   >
@@ -95,5 +94,5 @@
         </div>
       {/each}
     </div>
-  </section>
+  </section> -->
 </main>
