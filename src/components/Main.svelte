@@ -49,9 +49,9 @@
   </section>
   <section class="py-20 lg:py-32 flex flex-col gap-24" id="highlights">
     <div class="flex flex-col gap-2 text-center">
-      <h6 class="text-large sm:text-xl md:text-2xl">
+      <!-- <h6 class="text-large sm:text-xl md:text-2xl">
         A few of my creative endeavors.
-      </h6>
+      </h6> -->
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
         Some of my <span class="poppins text-teal-600">highlighted</span> projects
       </h3>
