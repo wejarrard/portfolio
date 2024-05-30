@@ -1,7 +1,21 @@
 <script>
   import { steps } from "$lib/steps.js";
   import Step from "./Step.svelte";
+
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const particlesJS = window.particlesJS;
+
+    particlesJS.load("particles-js", "/assets/particles.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  });
 </script>
+
+<div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">
+  <div id="particles-js" class="absolute inset-0" />
+</div>
 
 <main class="flex flex-col flex-1 p-4">
   <section
@@ -13,28 +27,28 @@
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
         Hi! I'm
-        <span class="poppins text-teal-600">William</span>
+        <span class="poppins text-mint">William</span>
         Jarrard a
-        <span class="poppins text-teal-600">Machine Learning</span>
+        <span class="poppins text-mint">Machine Learning</span>
         Engineer and
-        <span class="poppins text-teal-600">Data</span>
+        <span class="poppins text-mint">Data</span>
         Scientist
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
-        I have a passion for the application of <span class="text-teal-600"
+        I have a passion for the application of <span class="text-mint"
           >deep learning</span
         >
         to new and exciting problems and the development of
-        <span class="text-teal-600"> foundational models</span> to enable new research.
+        <span class="text-mint"> foundational models</span> to enable new research.
       </p>
       <a
         href="https://www.linkedin.com/in/willjarrard/"
         target="_blank"
         rel="noopener noreferrer"
-        class="greenShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 inline-block"
+        class="greenShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-gray text-gray inline-block"
       >
         <div
-          class="absolute top-0 right-full w-full h-full bg-teal-600 opacity-20 group-hover:translate-x-full z-0 duration-200"
+          class="absolute top-0 right-full w-full h-full bg-mint opacity-20 group-hover:translate-x-full z-0 duration-200"
         ></div>
         <h4 class="relative z-9">Get in touch &rarr;</h4>
       </a>
@@ -53,7 +67,7 @@
         A few of my creative endeavors.
       </h6> -->
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        Some of my <span class="poppins text-teal-600">highlighted</span> projects
+        Some of my <span class="poppins text-mint">highlighted</span> projects
       </h3>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
@@ -67,11 +81,11 @@
     class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
   >
     <div
-      class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-teal-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-teal-700 py-4"
+      class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-green-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-green-700 py-4"
     >
       <h6 class="text-large sm:text-xl md:text-2xl">Want to know more?</h6>
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        A bit <span class="poppins text-teal-600">about</span> me.
+        A bit <span class="poppins text-green-600">about</span> me.
       </h3>
     </div>
     <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
@@ -81,7 +95,7 @@
       {#each benefits as benefit, index}
         <div class="flex gap-6 sm:gap-8">
           <p
-            class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold"
+            class="poppins text-4xl sm:text-5xl md:text-6xl text-cream font-semibold"
           >
             0{index + 1}
           </p>

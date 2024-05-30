@@ -47,7 +47,7 @@ h3,
 }
 
 .prose a {
-    @apply text-teal-500;
+    @apply text-mint;
 }
 
 .prose h2 {
@@ -78,4 +78,3 @@ h3,
 .prose pre {
     @apply mb-2 pl-2;
   }
-  
