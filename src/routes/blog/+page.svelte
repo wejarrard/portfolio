@@ -24,18 +24,20 @@
   </div>
 </section>
 
-<section class="container mx-auto px-4 py-8 space-y-4">
-  <ul class="grid gap-6">
+<section class="container mx-auto px-4 py-8 space-y-6">
+  <ul class="grid gap-8">
     {#each data.posts as post}
-      <li class="border-b border-mint pb-6 last:border-b-0">
+      <li
+        class="p-6 bg-cream rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+      >
         <a
           href="blog/{post.slug}"
-          class="font-semibold text-3xl sm:text-4xl md:text-5xl"
+          class="font-bold text-2xl sm:text-3xl md:text-4xl text- hover:text-mint-dark transition-colors"
         >
           {post.title}</a
         >
-        <p class="text-gray-400">{post.date}</p>
-        <p class="mt-3">{post.description}</p>
+        <p class="text-gray-500 text-sm mt-2">{post.date}</p>
+        <p class="mt-4 text-gray-700">{post.description}</p>
       </li>
     {/each}
   </ul>
