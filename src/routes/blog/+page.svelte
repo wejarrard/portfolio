@@ -2,9 +2,9 @@
   export let data;
 </script>
 
-<section id="introPage">
+<section id="introPage" class="container mx-auto px-4 py-8">
   <div
-    class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-mint after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-mint py-16"
+    class="flex flex-col gap-2 text-center relative after:absolute after:bottom-0 after:w-full after:h-1.5 after:bg-mint py-16"
   >
     <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl py-6">
       My
@@ -24,7 +24,7 @@
   </div>
 </section>
 
-<section class="space-y-4 pt-16">
+<section class="container mx-auto px-4 py-8 space-y-4">
   <ul class="grid gap-6">
     {#each data.posts as post}
       <li class="border-b border-mint pb-6 last:border-b-0">
