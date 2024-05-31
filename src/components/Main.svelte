@@ -26,21 +26,28 @@
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-        Hi! I'm
+        <!-- Hi! I'm -->
         <span class="poppins text-mint">William</span>
-        Jarrard a
-        <span class="poppins text-mint">Machine Learning</span>
-        Engineer and
-        <span class="poppins text-mint">Data</span>
-        Scientist
+        Jarrard
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
-        I have a passion for the application of <span class="text-mint"
-          >deep learning</span
-        >
-        to new and exciting problems and the development of
-        <span class="text-mint"> foundational models</span> to enable new research.
+        I am currently a Computational Biologist and Machine Learning Researcher
+        at <a href="https://www.ucsf.edu/" class="text-mint">UCSF</a>, where I
+        work in the Feng/Quigley Lab on applying deep learning to study
+        transcription factors in prostate cancer. I was previously an
+        undergraduate at the
+        <a href="https://www.virginia.edu/" class="text-mint"
+          >University of Virginia (UVA)</a
+        >, where I majored in Systems Engineering. During my time at UVA, I made
+        significant contributions to
+        <a
+          href="https://www.nature.com/articles/s41586-021-03903-7"
+          class="text-mint">cancer research</a
+        >, particularly in advancing our understanding of genetic factors in
+        oncology. I also completed a 4+1 program to earn my Master’s in Data
+        Science at UVA.
       </p>
+
       <a
         href="https://www.linkedin.com/in/willjarrard/"
         target="_blank"
@@ -67,7 +74,7 @@
         A few of my creative endeavors.
       </h6> -->
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        Some of my <span class="poppins text-mint">highlighted</span> projects
+        Some of my <span class="poppins text-mint">Projects</span>
       </h3>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
