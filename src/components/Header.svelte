@@ -22,7 +22,7 @@
     {#each tabs as tab, index}
       <a
         href={tab.link}
-        class="duration-200 hover:text-green-600"
+        class="duration-200 hover:text-mint"
         target={tab.name === "Resume" ? "_blank" : ""}
       >
         <p>{tab.name}</p>
