@@ -3,8 +3,8 @@
 
   export let tabs = [
     { name: "Home", link: "/" },
-    { name: "Highlights", link: "/#highlights" },
-    { name: "Blog", link: "/blog" },
+    { name: "Projects", link: "/#highlights" },
+    // { name: "Blog", link: "/blog" },
     { name: "Resume", link: "/assets/resume.pdf" },
   ];
 </script>

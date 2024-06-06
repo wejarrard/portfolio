@@ -15,8 +15,16 @@
   <div class="font-medium text-xl sm:text-2xl md:text-3xl">
     {step.name}
   </div>
+
+  <!-- Optional paper name section -->
+  {#if step.paperName}
+    <div class="font-medium text-lg sm:text-xl md:text-2xl text-mint">
+      {step.paperName}
+    </div>
+  {/if}
   <!-- Render the description here -->
   <p class="text-base sm:text-lg">{@html step.description}</p>
+
   <div class="flex-1 flex justify-between gap-4 items-end">
     <div
       class="ml-auto cursor-pointer hover:text-cream duration-200 relative after:absolute after:top-0 after:h-0 after:right-full after:bg-gray after:w-full after:h-full after:duration-200 hover:after:translate-x-full after:z-[-1] overflow-hidden"

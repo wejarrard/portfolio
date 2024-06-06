@@ -74,7 +74,8 @@
         A few of my creative endeavors.
       </h6> -->
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        Some of my <span class="poppins text-mint">Projects</span>
+        Projects <span class="poppins text-mint">and</span>
+        Papers
       </h3>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
