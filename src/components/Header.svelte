@@ -29,15 +29,25 @@
       </a>
     {/each}
   </div>
-  <a
-    href="https://www.linkedin.com/in/willjarrard/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="greenShadow relative overflow-hidden px-5 py-2 group rounded-full bg-gray text-gray inline-block"
-  >
-    <div
-      class="absolute top-0 right-full w-full h-full bg-mint opacity-20 group-hover:translate-x-full z-0 duration-200"
-    ></div>
-    <h4 class="relative z-9">Get in touch</h4>
-  </a>
+  <div class="flex items-center gap-4">
+    <a
+      href="https://github.com/wejarrard"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-2xl hover:text-mint duration-200"
+    >
+      <i class="fab fa-github"></i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/willjarrard/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="greenShadow relative overflow-hidden px-5 py-2 group rounded-full bg-gray text-gray inline-block"
+    >
+      <div
+        class="absolute top-0 right-full w-full h-full bg-mint opacity-20 group-hover:translate-x-full z-0 duration-200"
+      ></div>
+      <h4 class="relative z-9">Get in touch</h4>
+    </a>
+  </div>
 </header>
