@@ -35,10 +35,7 @@
         at UCSF where I
         work under <a href="https://artera.ai/team/felix-feng" class="text-mint">Felix Feng</a> on applying deep learning to study
         transcription factors in prostate cancer. I was previously an
-        undergraduate at the
-        <a href="https://www.virginia.edu/" class="text-mint"
-          >University of Virginia (UVA)</a
-        >, where I majored in Systems Engineering. During my time at UVA, I made
+        undergraduate at UVA, where I majored in Systems Engineering. During my time at UVA, I made
         significant contributions to
         <a
           href="https://www.nature.com/articles/s41586-021-03903-7"
