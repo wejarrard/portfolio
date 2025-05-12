@@ -31,9 +31,9 @@
         Jarrard
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
-        I am currently a Computational Biologist and Machine Learning Researcher
+        I am currently a Data Scientist and Machine Learning Researcher
         at <a href="https://www.ucsf.edu/" class="text-mint">UCSF</a>, where I
-        work in the Feng/Quigley Lab on applying deep learning to study
+        work under <a href="https://artera.ai/team/felix-feng" class="text-mint">Felix Feng</a> on applying deep learning to study
         transcription factors in prostate cancer. I was previously an
         undergraduate at the
         <a href="https://www.virginia.edu/" class="text-mint"
@@ -44,7 +44,7 @@
           href="https://www.nature.com/articles/s41586-021-03903-7"
           class="text-mint">cancer research</a
         >, particularly in advancing our understanding of genetic factors in
-        oncology. I also completed a 4+1 program to earn my Master’s in Data
+        oncology and helping to develop a method for extracting crucial information, like drug names, from paper medical sheets for a hospital in Rwanda. I also completed a 4+1 program to earn my Master’s in Data
         Science at UVA.
       </p>
 
