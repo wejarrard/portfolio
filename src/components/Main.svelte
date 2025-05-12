@@ -32,7 +32,7 @@
       </h2>
       <p class="text-base sm:text-lg md:text-xl">
         I am currently a Data Scientist and Machine Learning Researcher
-        at <a href="https://www.ucsf.edu/" class="text-mint">UCSF</a>, where I
+        at UCSF where I
         work under <a href="https://artera.ai/team/felix-feng" class="text-mint">Felix Feng</a> on applying deep learning to study
         transcription factors in prostate cancer. I was previously an
         undergraduate at the
