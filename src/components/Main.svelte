@@ -1,5 +1,6 @@
 <script>
   import { steps } from "$lib/steps.js";
+  import { personalProjects } from "$lib/personal_projects.js";
   import Step from "./Step.svelte";
 
   import { onMount } from "svelte";
@@ -41,7 +42,7 @@
           href="https://www.nature.com/articles/s41586-021-03903-7"
           class="text-mint">cancer research</a
         >, particularly in advancing our understanding of genetic factors in
-        oncology and helping to develop a method for extracting crucial information, like drug names, from paper medical sheets for a hospital in Rwanda. I also completed a 4+1 program to earn my Master’s in Data
+        oncology and helping to develop a method for extracting crucial information, like drug names, from paper medical sheets for a hospital in Rwanda. I also completed a 4+1 program to earn my Master's in Data
         Science at UVA.
       </p>
 
@@ -81,6 +82,31 @@
       {/each}
     </div>
   </section>
+
+  <section class="py-20 lg:py-32 flex flex-col gap-24" id="personal-projects">
+    <div class="flex flex-col gap-2 text-center">
+      <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+        Personal <span class="poppins text-mint">Projects</span>
+      </h3>
+    </div>
+    <div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {#each personalProjects as project (project.name)}
+          <a href={project.href} target="_blank" class="flex gap-4 p-4 border border-mint hover:border-mint/80 rounded-lg transition-all duration-200">
+            <div class="text-mint text-2xl pt-1">
+              <i class={project.icon} />
+            </div>
+            <div>
+              <h4 class="font-medium text-lg mb-2">{project.name}</h4>
+              <p class="text-sm">{project.description}</p>
+              <p class="text-xs text-mint mt-3 flex items-center">View project <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></p>
+            </div>
+          </a>
+        {/each}
+      </div>
+    </div>
+  </section>
+  
   <!-- <section
     id="about"
     class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
