@@ -3,7 +3,7 @@ export const personalProjects = [
         name: "Gold-Adjusted SPY Index",
         icon: "fa-solid fa-chart-line",
         description: "A visualization understanding when trust in money breaks, assets priced in that money often rise not because they gained value, but because the money lost it.",
-        href: "#"
+        href: "https://stocksingold.vercel.app/"
     },
     {
         name: "rust-seq",
