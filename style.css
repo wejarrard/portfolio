@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Header */
+#dhead {
+  padding: 40px 20px;
+}
+
+#dhead .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#dpic {
+  flex-shrink: 0;
+}
+
+.ppic {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+}
+
+#ddesc h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#ddesc h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#dico {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.iico {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.iico:hover {
+  opacity: 1;
+}
+
+#demail {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #666;
+}
+
+/* Timeline */
+#history {
+  position: relative;
+  --timespan-width: 150px;
+  --entry-gap: 20px;
+  --ico-width: 80px;
+  --line-x: 18px; /* x-position (within the icon column) where the vertical line + dot sit */
+}
+
+#history::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--timespan-width) + var(--entry-gap) + var(--line-x) - 1px);
+  top: 6px;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: var(--timespan-width) var(--ico-width) 1fr;
+  column-gap: var(--entry-gap);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timespan {
+  min-width: auto;
+  font-size: 14px;
+  color: #666;
+  padding-top: 2px;
+  text-align: right;
+}
+
+.ico {
+  position: relative;
+  width: var(--ico-width);
+  min-height: 60px;
+}
+
+.entry-dot {
+  display: none;
+}
+
+.ico img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+  left: calc((var(--line-x) + var(--ico-width)) / 2 + 6px);
+  top: -12px;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.desc {
+  flex: 1;
+  padding-bottom: 10px;
+}
+
+.desc ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.desc li {
+  margin-bottom: 8px;
+}
+
+/* Email icon */
+#iemail {
+  cursor: pointer;
+}
+
+/* Titles */
+.ctitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0066cc;
+}
+
+/* Skills */
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.skill-category div {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #dhead .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #dpic {
+    margin-bottom: 10px;
+  }
+
+  .ppic {
+    width: 180px;
+    height: 180px;
+  }
+
+  #ddesc {
+    text-align: center;
+  }
+
+  #ddesc h1 {
+    font-size: 28px;
+  }
+
+  #ddesc h2 {
+    font-size: 16px;
+  }
+
+  #dico {
+    justify-content: center;
+  }
+
+  #history::before {
+    display: none;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .timespan {
+    text-align: left;
+  }
+
+  .ico {
+    display: none;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
